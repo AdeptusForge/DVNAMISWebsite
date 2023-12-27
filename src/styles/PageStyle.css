@@ -53,13 +53,9 @@ h1 {
   text-transform: uppercase;
 }
 
-.nav-links a:target
+.nav-links a:hover
 {
   color: red;
-}
-
-.nav-links a:focus {
-  background-color: #ff9776;
 }
 
 .expanded {
