@@ -53,10 +53,6 @@ h1 {
   text-transform: uppercase;
 }
 
-.nav-links a:hover
-{
-  color: red;
-}
 
 .expanded {
   display: unset;
