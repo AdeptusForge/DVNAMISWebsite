@@ -14,12 +14,12 @@ const PageTitle = "Portfolio";
 		<meta name="generator" content={Astro.generator} />
 		<title>DVNAMIS | {PageTitle}</title>
     <style>
-      skill {
+      .skill {
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 4rem;
         font-weight: bold;
       }
-      skill:hover
+      .skill:hover
       {
         color: greenyellow;
       }
@@ -27,7 +27,8 @@ const PageTitle = "Portfolio";
 	</head>
 	<body>
 		<h1>DVNAMIS Portfolio Website</h1>
-    <skill>AttemptSkill</skill>
+    <div class = "skill">AttemptSkill</div>
+    <a href="/">Home</a>
     <script>
       import "../scripts/menu.js";
     </script>
