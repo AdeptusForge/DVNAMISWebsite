@@ -24,15 +24,31 @@ h1 {
 .navlink 
 {
   padding: 0rem;
+  transition: transform 0.3s;
 }
 
 .navlink a
 {
   text-decoration: none;
   font-size: 1rem;
+  transition: transform 0.3s;
 }
 
 .navlink a:hover, a:focus
 {
   color:greenyellow;
+  transform: translate(0px, -10px);
+  
+}
+
+.skill {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  transition: transform 1s;
+}
+
+.skill:hover
+{
+  transform: rotateX(180deg);
 }

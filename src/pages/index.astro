@@ -1,36 +1,7 @@
 ---
-import '../styles/PageStyle.css';
-
-import HeaderBar from '../components/HeaderBar.astro'
+import BaseLayout from '../layouts/BaseLayout.astro';
 const PageTitle = "Portfolio";
 ---
-<HeaderBar />
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>DVNAMIS | {PageTitle}</title>
-    <style>
-      .skill {
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 4rem;
-        font-weight: bold;
-      }
-      .skill:hover
-      {
-        color: greenyellow;
-      }
-    </style>
-	</head>
-	<body>
-		<h1>DVNAMIS Portfolio Website</h1>
-    <div class = "skill">AttemptSkill</div>
-    <a href="/">Home</a>
-    <script>
-      import "../scripts/menu.js";
-    </script>
-	</body>
-</html>
+<BaseLayout PageTitle={PageTitle}>
+</BaseLayout>
