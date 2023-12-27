@@ -1,14 +1,22 @@
 ---
-const PageTitle = "Page Test";
+const { frontmatter } = Astro.props;
+
 import HeaderBar from'../components/HeaderBar.astro'
 ---
+
+
 <HeaderBar />
 
 
-<title>DVNAMIS | {PageTitle}</title>
+
+<title>DVNAMIS | {frontmatter.title}</title>
+
+<h1>{frontmatter.title}</h1>
+
 
 <html lang="en">
   <body>
+    <slot />
     <script>
       import "../scripts/menu.js";
     </script>

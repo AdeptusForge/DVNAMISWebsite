@@ -1,16 +1,7 @@
 ---
-title: 'My First Blog Post'
-pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
-image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
-tags: ["astro", "blogging", "learning in public"]
+layout: ../../pages/PortfolioEntryPage.astro
+title: 'Abyss Of Sand'
 ---
-# My First Blog Post
-
-Published on: 2022-07-01
 
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
@@ -20,7 +11,7 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+3. ~~Making Blog Posts~~: This is my first blog post! I now have Astro pages and Markdown posts!
 
 ## What's next
 
