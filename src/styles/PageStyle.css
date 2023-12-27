@@ -21,6 +21,10 @@ h1 {
   color: rgb(0, 255, 128);
 }
 
+.skill a:hover{
+  color: greenyellow;
+}
+
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
