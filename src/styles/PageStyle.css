@@ -53,7 +53,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.nav-links a:hover
+.nav-links a:target
 {
   color: red;
 }
