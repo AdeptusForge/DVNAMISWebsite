@@ -1,6 +1,6 @@
 ---
 const { frontmatter } = Astro.props;
-
+import image from {frontmatter.image.file}
 import HeaderBar from'../components/HeaderBar.astro'
 ---
 
@@ -16,6 +16,8 @@ import HeaderBar from'../components/HeaderBar.astro'
 
 <html lang="en">
   <body>
+    {frontmatter.intro}
+    <img src={frontmatter.image.file} alt={frontmatter.image.alt}  width="500" height="333">
     <slot />
     <script>
       import "../scripts/menu.js";
