@@ -3,10 +3,8 @@ layout: ../../pages/PortfolioEntryPage.astro
 title: 'Abyss Of Sand'
 pubDate: 2022-07-01
 
-image:
-
-  file: "/assets/images/Showing.png"
-  alt: "Abyss Of Sand."
+image: "/assets/images/Showing.png"
+image_alt: "Abyss Of Sand."
 tags: ["astro", "blogging", "learning in public"]
 ---
 

@@ -1,9 +1,11 @@
 ---
+
+
 const { frontmatter } = Astro.props;
 import HeaderBar from'../components/HeaderBar.astro'
 
----
 
+---
 
 <HeaderBar />
 
@@ -17,6 +19,14 @@ import HeaderBar from'../components/HeaderBar.astro'
 <html lang="en">
   <body>
     {frontmatter.intro}
+    <style>
+      .scaledImage{
+        width: 20%;
+        height: 20%;
+      }
+    </style>
+    {frontmatter.image && <img class="scaledImage" src={frontmatter.image} alt={frontmatter.image_alt || ''} />}
+
     <slot />
     <script>
       import "../scripts/menu.js";
