@@ -1,26 +1,35 @@
 ---
 import '../styles/PageStyle.css';
 
+import SmallEntry from '../components/SmallEntry.astro'
 import HeaderBar from '../components/HeaderBar.astro'
+import ScrollBar from '../components/ScrollBar.astro'
 const PageTitle = "Portfolio";
 ---
 <HeaderBar />
 
-<html lang="en">
+<html lang="en" translate="no">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>DVNAMIS | {PageTitle}</title>
+		<title >DVNAMIS | {PageTitle}</title>
 	</head>
 	<body>
-		<h1>DVNAMIS Portfolio Website</h1>
+		<h1 translate="no">DVNAMIS Portfolio Website</h1>
     <div class = "skill">AttemptSkill</div>
-    <script
+    <script is:inline 
     src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
     crossorigin="anonymous"></script>
+    <div>
+      <SmallEntry />
+
+      <!-- <ScrollBar />-->
+      
+    </div>
+    
     <script>
       import "../scripts/menu.js";
     </script>
