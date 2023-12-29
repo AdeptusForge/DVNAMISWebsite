@@ -1,24 +1,66 @@
-.diamond 
+
+
+
+.diamond {
+  overflow: hidden;
+  height: 200px;
+  transform:translate(-30px, 0px) rotate(45deg);
+	width:200px;
+  border-width: 2px;
+  border-style:solid;
+  object-position: center;
+  position: relative;
+  padding:10px;
+  border-radius: 5px;
+}
+
+
+.diamond-image
 {
   position: relative;
-  overflow: hidden;
+  transform:rotate(-45deg) translate(-100px, -100px);
+
+
 }
-.diamond {
-   
-  height: 60px;
+.diamondDiv
+{
+  transform: translateX(-10px);
+}
+
+.EntryBackground
+{
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  width: 600px;
+  border-width:2px;
+  border-style:solid;
+}
+
+.entryDiv
+{
+  display:flex;
+
+}
+
+.EntryTextBox
+{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  margin-right: 0.5%;
+  font-size: 0.8rem;
+}
+
+.EntryHeader
+{
+  font-size: 1rem;
   text-align: center;
-  transform:rotate(45deg);
-	width:60px;
 }
-.diamond:before
+
+.shapeScaler
 {
-  position:absolute;
-  z-index: -1;
-  
-  background: url(https://picsum.photos/200) center/cover no-repeat;
-  
-}
-.diamond:before
-{
-  transform:rotate(45deg);
+  position:relative;
+  transform: scale(var(--vw-scale));
+  margin-top: max(15%,calc(calc(var(--vh-scale)* var(--vh-scale))* 15%));
+
 }
