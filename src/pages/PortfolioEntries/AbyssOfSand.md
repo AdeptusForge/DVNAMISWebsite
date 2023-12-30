@@ -1,7 +1,7 @@
 ---
 layout: ../../pages/PortfolioEntryPage.astro
 title: 'Abyss Of Sand'
-time-of-creation: 'November 17th - December 8th'
+time-of-creation: 'November 17th 2023 - December 8th 2023'
 image: "/assets/images/Showing.png"
 image_alt: "Abyss Of Sand."
 ---
