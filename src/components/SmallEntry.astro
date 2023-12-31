@@ -1,5 +1,11 @@
 ---
+interface Props {
+  link: string;
+  imageFile: string;
+}
+
 import '../styles/SmallEntry.css';
+const { link, imageFile } = Astro.props;
 ---
 
 
@@ -8,13 +14,13 @@ import '../styles/SmallEntry.css';
     import '../scripts/transformScaling.js'
   </script>
   <div class="shapeScaler">
-    <a href="/PortfolioEntries/AbyssOfSand">
+    <a href={link}>
       <div class="EntryBackground" >
         <div class = entryDiv>
           <div class="diamondDiv">
             <div class="diamond">
               <div class="diamond-image">
-                <img src="/assets/images/Showing.png" alt="picture alt">
+                <img src={imageFile} alt="picture alt">
               </div>
             </div>
           </div>
