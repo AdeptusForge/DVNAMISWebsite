@@ -1,6 +1,5 @@
 
 
-
 .diamond {
   overflow: hidden;
   height: 200px;
@@ -49,6 +48,7 @@
   margin-left: 2%;
   margin-right: 0.5%;
   font-size: 0.8rem;
+  color:yellow;
 }
 
 .EntryHeader
@@ -61,6 +61,15 @@
 {
   position:relative;
   transform: scale(var(--vw-scale));
-  margin-top: max(15%,calc(calc(var(--vh-scale)* var(--vh-scale))* 15%));
+  margin-top: max(15%,calc(calc(var(--vh-scale) * var(--vh-scale)) * 15%));
 
+}
+
+.shapeScaler a {
+  text-decoration: none;
+  color:black;
+}
+.shapeScaler a:focus
+{
+  color:black;
 }
