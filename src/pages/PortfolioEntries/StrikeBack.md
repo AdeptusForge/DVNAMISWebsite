@@ -1,8 +1,9 @@
 ---
-layout: ../../pages/PortfolioEntryPage.astro
+layout: ../../pages/PortfolioLargePage.astro
 title: 'Strike Back'
-time-of-creation: 'September 8th 2022 - April 17th 2023'
-image: "/assets/images/Showing.png"
+undertitle: 'A 2D traditional fighting game'
+timeOfCreation: '9/8/2022 - 4/17/2023'
+image: "/assets/images/StrikeBackSplashHT.png"
 image_alt: "Strike Back."
 ---
 

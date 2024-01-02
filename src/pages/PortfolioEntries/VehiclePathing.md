@@ -1,7 +1,8 @@
 ---
-layout: ../../pages/PortfolioEntryPage.astro
+layout: ../../pages/PortfolioSmallPage.astro
 title: 'Vehicle Pathing'
-time-of-creation: 'November 29th 2023 - December 1st 2023'
+undertitle: ''
+timeOfCreation: '11/29/2023 - 12/1/2023'
 image: "/assets/images/Showing.png"
 image_alt: "Vehicle Pathing."
 ---

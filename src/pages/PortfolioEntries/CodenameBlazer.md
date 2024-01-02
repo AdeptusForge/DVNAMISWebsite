@@ -1,7 +1,8 @@
 ---
-layout: ../../pages/PortfolioEntryPage.astro
+layout: ../../pages/PortfolioSmallPage.astro
 title: 'Evidence System'
-time-of-creation: 'January 3th 2018 - July 19th 2018'
+undertitle: ''
+timeOfCreation: '1/3/2018 - 7/19/2018'
 image: "/assets/images/Showing.png"
 image_alt: "Evidence System."
 ---

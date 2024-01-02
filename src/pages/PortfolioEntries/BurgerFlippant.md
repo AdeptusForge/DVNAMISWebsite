@@ -1,7 +1,8 @@
 ---
-layout: ../../pages/PortfolioEntryPage.astro
+layout: ../../pages/PortfolioSmallPage.astro
 title: 'Burger Flippant'
-time-of-creation: 'March 17th 2018 - March 31st 2018'
+undertitle: ''
+timeOfCreation: '3/17/2018 - 3/31/2018'
 image: "/assets/images/Showing.png"
 image_alt: "Burger Flippant."
 ---

@@ -1,0 +1,50 @@
+---
+
+const { frontmatter } = Astro.props;
+import HeaderBar from'../components/HeaderBar.astro'
+import '../styles/PortfolioEntry.css';
+
+---
+<title>DVNAMIS | {frontmatter.title}</title>
+
+
+<div class="largeheader">
+  {frontmatter.image && <img class="headerImageLarge" src={frontmatter.image} alt={frontmatter.image_alt || ''} />}
+  <div class="largeheaderText">
+    {frontmatter.title}
+    <div class="underheader">
+      {frontmatter.undertitle}
+    </div>
+    <div class="creationdates">
+      {frontmatter.timeOfCreation}
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="parallaxbackground">
+    <script>
+      import '../scripts/scrollAppearHeader.js'
+      import '../scripts/transformScaling.js'
+    </script>
+    <div id="invisibleheader">
+      <slot name="head"/>
+    </div>
+    
+    <div>
+      <div class="row">
+        <div class="imageColumn">
+        </div>
+        <div class="textColumn">
+          <slot />
+        </div>
+      </div>
+
+
+
+      <script>
+        import "../scripts/menu.js";
+      </script>
+    </div>
+  </div>
+</div>
