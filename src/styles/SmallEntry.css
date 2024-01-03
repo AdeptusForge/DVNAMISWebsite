@@ -13,12 +13,13 @@
   border-radius: 4px;
 }
 
-
 .diamond-image
 {
+  --offsetY:0px;
   position: relative;
-  transform:rotate(-45deg) translate(-100px, -100px);
+
 }
+
 .diamondDiv
 {
   transform: translateX(-10px);
@@ -46,13 +47,17 @@
   margin-left: 2%;
   margin-right: 0.5%;
   font-size: 0.8rem;
-  color:yellow;
+  color:lightgray;
 }
 
 .EntryHeader
 {
-  font-size: 1rem;
-  text-align: center;
+  font-size: 2rem;
+  text-align: left;
+  color: white;
+  text-shadow: -2px 2px black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .shapeScaler

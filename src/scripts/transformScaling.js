@@ -10,10 +10,3 @@ window.addEventListener('resize', () => {
 window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh-scale', `${range * window.innerHeight}`);
 });
-
-
-var bodyRect = document.body.getBoundingClientRect(),
-    elemRect = document.documentElement.getBoundingClientRect(),
-    offset   = elemRect.top - bodyRect.top;
-
-console.log('Element is ' + offset + ' vertical pixels from <body>');

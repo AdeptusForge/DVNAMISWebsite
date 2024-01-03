@@ -1,46 +1,62 @@
 ---
 interface Props {
+  propid: string
   link: string;
   imageFile: string;
+  header: string;
+  blurb: string;
+
+  imageOffsetX?: typeof length;
+  imageOffsetY?: typeof length; 
+  imagescaleX?: typeof length;
+  imagescaleY?: typeof length; 
+  
 }
 
 import '../styles/SmallEntry.css';
-const { link, imageFile } = Astro.props;
+const { propid, link, header, blurb, imageFile,  imageOffsetX, imageOffsetY, imagescaleX, imagescaleY} = Astro.props;
 ---
 
+<script>
+  import '../scripts/transformScaling.js'
+  import '../scripts/RolodexScroll.js'
+</script>
+<div class="shapeScaler" id={propid}>
+  <a href={link}>
+    <div class="EntryBackground" >
+      <div class = entryDiv>
+        <div class="diamondDiv">
+          <div class="diamond">
 
-<body>
-  <script>
-    import '../scripts/transformScaling.js'
-  </script>
-  <div class="shapeScaler">
-    <a href={link}>
-      <div class="EntryBackground" >
-        <div class = entryDiv>
-          <div class="diamondDiv">
-            <div class="diamond">
-              <div class="diamond-image">
-                <img src={imageFile} alt="picture alt">
-              </div>
+            <style define:vars={{ imageOffsetX, imageOffsetY, imagescaleX, imagescaleY }}>
+              .diamond-image
+              {
+                transform:
+                rotate(-45deg) 
+                scale(var(--imagescaleX),var(--imagescaleY) )
+                translateX(calc(var(--imageOffsetX) * 1px))
+                translateY(calc(var(--imageOffsetY) * 1px));
+              }
+            </style>
+            <div class="diamond-image">
+              <img id={propid} src={imageFile} alt="picture alt">
             </div>
-          </div>
-  
-          <div class="EntryTextBox">
-            <div class="EntryHeader">
-              HEADER
-            </div>
-            <div>
-              A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A 
-            </div>
-            
           </div>
         </div>
-    </a>
-    
+
+        <div class="EntryTextBox">
+          <div class="EntryHeader">
+            {header}
+          </div>
+          <div>
+            {blurb}
+          </div>
+          
+        </div>
+      </div>
+  </a>
+  
 
 
-    </div>
   </div>
-
-
-</body>
+</div>
