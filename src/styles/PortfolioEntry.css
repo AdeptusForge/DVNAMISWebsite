@@ -84,7 +84,7 @@ img
   color:white;
   top:73%;
   left:10%;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0px black;
   
 }
 .underheader
@@ -94,7 +94,7 @@ img
   font-size: 1.2vw;
   color:white;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0px black;
 }
 .creationdates
 {
@@ -103,7 +103,7 @@ img
   font-size: 1.2vw;
   color:white;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0px black;
 }
 
 .headerImageLarge

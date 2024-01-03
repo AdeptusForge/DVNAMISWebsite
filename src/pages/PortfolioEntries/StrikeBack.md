@@ -1,9 +1,9 @@
 ---
 layout: ../../pages/PortfolioLargePage.astro
 title: 'Strike Back'
-undertitle: 'A 2D traditional fighting game'
+undertitle: 'A 2D traditional fighting game developed with a team of 13 others in less than 8 months'
 timeOfCreation: '9/8/2022 - 4/17/2023'
-image: "/assets/images/StrikeBackSplashHT.png"
+image: "/assets/images/StrikeBackSplash.png"
 image_alt: "Strike Back."
 ---
 
