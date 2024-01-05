@@ -1,6 +1,6 @@
 ---
 layout: ../../pages/PortfolioSmallPage.astro
-title: 'Evidence System'
+title: 'Codename Blazer'
 undertitle: ''
 timeOfCreation: '1/3/2018 - 7/19/2018'
 image: "/assets/images/Showing.png"
