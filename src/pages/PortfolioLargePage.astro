@@ -1,23 +1,33 @@
+<!-- 
 ---
 
-const { frontmatter } = Astro.props;
-import HeaderBar from'../components/HeaderBar.astro'
-import '../styles/PortfolioEntry.css';
+import { Image } from 'astro:assets';
+import { getCollection } from "astro:content";
+export async function getStaticPaths() {
+	const blogEntries = await getCollection('PortfolioEntries');
+	return blogEntries.map(
+		entry => ({
+			params: { slug: entry.slug },
+			props: { entry },
+		})
+	);
+}
 
+const { entry } = Astro.props;
 
 ---
-<title>DVNAMIS | {frontmatter.title}</title>
+<title>DVNAMIS | {entry.data.title}</title>
 
 <html>
   <div class="largeheader" >
-    {frontmatter.image && <img class="headerImageLarge" src={frontmatter.image} alt={frontmatter.image_alt || ''} />}
+    {entry.data.image && <img class="headerImageLarge" src={entry.data.image} alt={entry.data.image_alt || ''} />}
     <div class="largeheaderText">
-      {frontmatter.title}
+      {entry.data.title}
       <div class="creationdates">
-        {frontmatter.timeOfCreation}
+        {entry.data.timeOfCreation}
       </div>
       <div class="underheader">
-        {frontmatter.undertitle}
+        {entry.data.undertitle}
       </div>
   
     </div>
@@ -50,5 +60,4 @@ import '../styles/PortfolioEntry.css';
       </div>
     </div>
   </div>
-  
-</html>
+</html>-->
