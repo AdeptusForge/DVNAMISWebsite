@@ -10,3 +10,4 @@ window.addEventListener('resize', () => {
 window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh-scale', `${range * window.innerHeight}`);
 });
+
